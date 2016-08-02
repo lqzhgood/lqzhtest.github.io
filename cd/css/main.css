@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    background-color: #E9F0F5;
+    font: 14px/18px "Microsoft Yahei", Tahoma, Helvetica, Arial, Verdana, "\5b8b\4f53", sans-serif;
+}
+
+#main {
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#store {
+    position: relative;
+}
+
+#store::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed;
+    z-index: -1;
+}
+
+#store li {
+    list-style: none;
+    padding:35px 0;
+}
+
+#store li>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#store .cd-pic {
+    width: 40px;
+    height: 40px;
+    background-color: #75CE66;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+#store .cd-pic.car {
+    background: url(../img/1.gif) center center;
+    background-size: cover;
+}
+
+#store .cd-pic.tra {
+    background: url(../img/2.gif) center center;
+    background-size: cover;
+}
+
+#store .cd-pic.air {
+    background: url(../img/3.gif) center center;
+    background-size: cover;
+}
+
+#store .cd-pic span {
+    position: relative;
+    left: -110px;
+    top: 12px;
+    color: #ACB7C0;
+    text-align: right;
+    display: inline-block;
+    width: 100px;
+}
+#store .cd-cont {
+    position: relative;
+    margin-left: 20px;
+    background: white;
+    border-radius: 0.25em;
+    padding: 10px 1em;
+    box-shadow: 0 3px 0 #d7e4ed;
+    line-height: 1.5em;
+    width: 300px;
+}
+
+#store .cd-cont::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;
+}
+
+#store .cd-cont>div {
+    color: #8A96A0;
+    margin: 10px 0;
+}
+
+#store .cd-cont .st_na {
+    color: #303e49;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#store .cd-cont .st_ph a {
+    color: #8A96A0;
+}
+
+#store .cd-cont .cont-btm {}
+
+#store .cd-cont .st_ot {
+    font-size: 8px;
+    float: left;
+    padding: 10px 0;
+    height: 20px;
+}
+
+#store .cd-cont .st_map {
+    float: right;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    background-color: #ACB7C0;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    border-radius: 0.25em;
+}
